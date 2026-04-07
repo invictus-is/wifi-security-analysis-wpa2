@@ -4,6 +4,8 @@
 - Portuguese: [README.pt-BR.md](README.pt-BR.md)
 
 # Wi-Fi Security Analysis (WPA2)
+WPA2-PSK relies on a shared authentication mechanism, where the same password is used by all clients. 
+This model increases the risk of exposure when weak passwords are used.
 
 ## Objective
 This project evaluates the security of Wi-Fi networks using the WPA2-PSK protocol in a controlled and authorized environment.
