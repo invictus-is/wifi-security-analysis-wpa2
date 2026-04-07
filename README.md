@@ -1,46 +1,50 @@
-# Análise de Segurança em Redes Wi-Fi WPA2
+# Wi-Fi Security Analysis (WPA2)
 
-## Objetivo
-Este projeto tem como objetivo analisar a segurança de redes Wi-Fi que utilizam o protocolo WPA2-PSK em um ambiente controlado e autorizado.
+## Objective
+This project aims to assess the security of Wi-Fi networks using the WPA2-PSK protocol in a controlled and authorized environment.
 
-## Ambiente
-- Laboratório controlado
-- Rede própria / autorizada
-- Ferramentas de análise de tráfego
+## Environment
+- Controlled laboratory
+- Own / authorized network
+- Traffic analysis tools
 
-## Identificação da Rede
-Foi identificada uma rede com as seguintes características:
-  ![Scan](monitoramento-WPA2.png)
-- Protocolo: WPA2
-- Cifra: CCMP
-- Autenticação: PSK
-- Canal: 6
-- Tráfego ativo presente
-- Clientes conectados
+## Network Identification
+A network with the following characteristics was identified:
 
+![Scan](monitoramento-WPA2.png)
 
-## Captura do Handshake
-Durante a análise, foi possível observar pacotes EAPOL, indicando que o handshake WPA2 foi capturado com sucesso.
+- Protocol: WPA2
+- Cipher: CCMP
+- Authentication: PSK
+- Channel: 6
+- Active traffic observed
+- Connected clients present
 
-## Análise de Segurança
-A captura do handshake permite a realização de ataques offline baseados em dicionário.  
-Neste cenário, a rede demonstrou vulnerabilidade devido ao uso de uma senha fraca.
+## Handshake Capture
+During the analysis, EAPOL packets were observed, indicating that the WPA2 handshake was successfully captured.
 
-## Limitações
-- Necessidade de clientes conectados
-- Dependência da qualidade do sinal
-- Ineficiente contra senhas fortes
+## Security Analysis
+Capturing the handshake enables offline dictionary-based attacks.  
+In this scenario, the network was found to be vulnerable due to the use of a weak password.
 
-## Mitigações
-- Utilizar senhas fortes (mínimo 12 caracteres, com alta entropia)
-- Implementar WPA3
-- Desativar WPS
-- Monitorar eventos de desautenticação
+## Limitations
+- Requires connected clients
+- Dependent on signal quality
+- Ineffective against strong passwords
 
- ## 📊 Resultado da Análise
-A captura do handshake permitiu validar a vulnerabilidade da rede a ataques de dicionário.
+## Analysis Result
+The captured handshake allowed validation of the network’s exposure to dictionary-based attacks.
 
-![Resultado](handshake.png)
+![Result](handshake.png)
 
-## Ética
-Este projeto foi realizado exclusivamente em ambiente controlado e autorizado, com fins educacionais.
+## Mitigations
+- Use strong passwords (minimum 12 characters with high entropy)
+- Adopt WPA3 where possible
+- Disable WPS
+- Monitor deauthentication events
+
+## Key Insight
+WPA2 security depends heavily on password strength rather than the protocol itself.
+
+## Ethics
+This project was conducted in a controlled and authorized environment for educational purposes only.
