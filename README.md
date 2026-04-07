@@ -1,3 +1,8 @@
+## 🌐 Language
+
+- 🇺🇸 English (default)
+- 🇧🇷 Portuguese: [README.pt-BR.md](README.pt-BR.md)
+
 # Wi-Fi Security Analysis (WPA2)
 
 ## Objective
