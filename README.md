@@ -4,11 +4,6 @@
 - Portuguese: [README.pt-BR.md](README.pt-BR.md)
 
 # Wi-Fi Security Analysis (WPA2)
-WPA2-PSK relies on a shared authentication mechanism, where the same password is used by all clients. 
-This model increases the risk of exposure when weak passwords are used.
-
-The captured handshake enables offline dictionary-based attacks.  
-In this scenario, the network was vulnerable due to insufficient password complexity.
 
 ## Objective
 This project evaluates the security of Wi-Fi networks using the WPA2-PSK protocol in a controlled and authorized environment.
@@ -36,6 +31,9 @@ The image below shows the network discovery and monitoring process:
 Analysis revealed the presence of EAPOL packets, confirming that the WPA2 handshake was successfully captured.
 
 ## Security Analysis
+WPA2-PSK relies on a shared authentication mechanism, where the same password is used by all clients.  
+This model increases the risk of exposure when weak passwords are used.
+
 The captured handshake enables offline dictionary-based attacks.  
 In this scenario, the network was vulnerable due to insufficient password complexity.
 
@@ -64,4 +62,4 @@ WPA2 security primarily depends on password complexity rather than the protocol 
 This project was conducted in a controlled and authorized environment for educational purposes only.
 
 ## Author
-João Carlos Velho de Oliveira.
+João Carlos Velho de Oliveira
