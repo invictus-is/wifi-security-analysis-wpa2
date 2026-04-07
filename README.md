@@ -7,6 +7,9 @@
 WPA2-PSK relies on a shared authentication mechanism, where the same password is used by all clients. 
 This model increases the risk of exposure when weak passwords are used.
 
+The captured handshake enables offline dictionary-based attacks.  
+In this scenario, the network was vulnerable due to insufficient password complexity.
+
 ## Objective
 This project evaluates the security of Wi-Fi networks using the WPA2-PSK protocol in a controlled and authorized environment.
 
