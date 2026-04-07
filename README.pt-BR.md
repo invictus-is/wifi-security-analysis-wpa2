@@ -1,4 +1,6 @@
 # Análise de Segurança em Redes Wi-Fi (WPA2)
+O WPA2-PSK utiliza um mecanismo de autenticação compartilhado, no qual a mesma senha é utilizada por todos os clientes.  
+Esse modelo aumenta o risco de exposição quando são utilizadas senhas de baixa complexidade.
 
 ## Objetivo
 Este projeto tem como objetivo avaliar a segurança de redes Wi-Fi que utilizam o protocolo WPA2-PSK em um ambiente controlado e autorizado.
