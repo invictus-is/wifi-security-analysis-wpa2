@@ -1,7 +1,7 @@
-## 🌐 Language
+## Language
 
-- 🇺🇸 English (default)
-- 🇧🇷 Portuguese: [README.pt-BR.md](README.pt-BR.md)
+- English (default)
+- Portuguese: [README.pt-BR.md](README.pt-BR.md)
 
 # Wi-Fi Security Analysis (WPA2)
 
@@ -10,7 +10,7 @@ This project aims to assess the security of Wi-Fi networks using the WPA2-PSK pr
 
 ## Environment
 - Controlled laboratory
-- Own / authorized network
+- Authorized network
 - Traffic analysis tools
 
 ## Network Identification
@@ -26,7 +26,7 @@ A network with the following characteristics was identified:
 - Connected clients present
 
 ## Handshake Capture
-During the analysis, EAPOL packets were observed, indicating that the WPA2 handshake was successfully captured.
+During the analysis, EAPOL packets were observed, confirming that the WPA2 handshake was successfully captured.
 
 ## Security Analysis
 Capturing the handshake enables offline dictionary-based attacks.  
