@@ -6,15 +6,17 @@
 # Wi-Fi Security Analysis (WPA2)
 
 ## Objective
-This project aims to assess the security of Wi-Fi networks using the WPA2-PSK protocol in a controlled and authorized environment.
+This project evaluates the security of Wi-Fi networks using the WPA2-PSK protocol in a controlled and authorized environment.
 
 ## Environment
 - Controlled laboratory
-- Authorized network
+- Authorized test network
 - Traffic analysis tools
 
 ## Network Identification
 A network with the following characteristics was identified:
+
+The image below shows the network discovery and monitoring process:
 
 ![Scan](monitoramento-WPA2.png)
 
@@ -26,11 +28,11 @@ A network with the following characteristics was identified:
 - Connected clients present
 
 ## Handshake Capture
-During the analysis, EAPOL packets were observed, confirming that the WPA2 handshake was successfully captured.
+Analysis revealed the presence of EAPOL packets, confirming that the WPA2 handshake was successfully captured.
 
 ## Security Analysis
-Capturing the handshake enables offline dictionary-based attacks.  
-In this scenario, the network was found to be vulnerable due to the use of a weak password.
+The captured handshake enables offline dictionary-based attacks.  
+In this scenario, the network was vulnerable due to insufficient password complexity.
 
 ## Limitations
 - Requires connected clients
@@ -38,9 +40,11 @@ In this scenario, the network was found to be vulnerable due to the use of a wea
 - Ineffective against strong passwords
 
 ## Analysis Result
-The captured handshake allowed validation of the network’s exposure to dictionary-based attacks.
+The image below demonstrates the successful capture of the handshake and validation of the network's exposure:
 
 ![Result](handshake.png)
+
+The results indicate that the network is susceptible to dictionary-based attacks under weak password conditions.
 
 ## Mitigations
 - Use strong passwords (minimum 12 characters with high entropy)
@@ -49,7 +53,10 @@ The captured handshake allowed validation of the network’s exposure to diction
 - Monitor deauthentication events
 
 ## Key Insight
-WPA2 security depends heavily on password strength rather than the protocol itself.
+WPA2 security primarily depends on password complexity rather than the protocol itself.
 
 ## Ethics
 This project was conducted in a controlled and authorized environment for educational purposes only.
+
+## Author
+João Carlos Velho de Oliveira.
