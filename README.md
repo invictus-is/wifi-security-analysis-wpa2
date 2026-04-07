@@ -14,7 +14,7 @@ This project evaluates the security of Wi-Fi networks using the WPA2-PSK protoco
 - Traffic analysis tools
 
 ## Network Identification
-A network with the following characteristics was identified:
+A network with the following characteristics was identified.
 
 The image below shows the network discovery and monitoring process:
 
@@ -40,11 +40,11 @@ In this scenario, the network was vulnerable due to insufficient password comple
 - Ineffective against strong passwords
 
 ## Analysis Result
-The image below demonstrates the successful capture of the handshake and validation of the network's exposure:
+The image below demonstrates the successful capture of the handshake and the validation of the network's exposure:
 
 ![Result](handshake.png)
 
-The results indicate that the network is susceptible to dictionary-based attacks under weak password conditions.
+The results indicate that the network is susceptible to dictionary-based attacks when weak passwords are used.
 
 ## Mitigations
 - Use strong passwords (minimum 12 characters with high entropy)
