@@ -5,11 +5,13 @@ Este projeto tem como objetivo avaliar a segurança de redes Wi-Fi que utilizam 
 
 ## Ambiente
 - Laboratório controlado
-- Rede própria / autorizada
+- Rede autorizada para testes
 - Ferramentas de análise de tráfego
 
 ## Identificação da Rede
-Foi identificada uma rede com as seguintes características:
+Foi identificada uma rede com as seguintes características.
+
+A imagem abaixo apresenta o processo de identificação e monitoramento da rede:
 
 ![Scan](monitoramento-WPA2.png)
 
@@ -21,11 +23,11 @@ Foi identificada uma rede com as seguintes características:
 - Presença de clientes conectados
 
 ## Captura do Handshake
-Durante a análise, foram observados pacotes EAPOL, indicando que o handshake WPA2 foi capturado com sucesso.
+A análise revelou a presença de pacotes EAPOL, confirmando que o handshake WPA2 foi capturado com sucesso.
 
 ## Análise de Segurança
-A captura do handshake permite a realização de ataques offline baseados em dicionário.  
-Neste cenário, a rede demonstrou vulnerabilidade devido ao uso de uma senha fraca.
+A captura do handshake possibilita a realização de ataques offline baseados em dicionário.  
+Neste cenário, a rede demonstrou vulnerabilidade devido à baixa complexidade da senha utilizada.
 
 ## Limitações
 - Necessidade de clientes conectados
@@ -33,18 +35,23 @@ Neste cenário, a rede demonstrou vulnerabilidade devido ao uso de uma senha fra
 - Ineficiente contra senhas fortes
 
 ## Resultado da Análise
-A captura do handshake permitiu validar a exposição da rede a ataques de dicionário.
+A imagem abaixo demonstra a captura do handshake e a validação da exposição da rede:
 
 ![Resultado](handshake.png)
 
+Os resultados indicam que a rede é suscetível a ataques de dicionário quando são utilizadas senhas de baixa complexidade.
+
 ## Mitigações
-- Utilizar senhas fortes (mínimo 12 caracteres, com alta entropia)
-- Implementar WPA3
+- Utilizar senhas fortes (mínimo 12 caracteres com alta entropia)
+- Adotar WPA3 sempre que possível
 - Desativar WPS
 - Monitorar eventos de desautenticação
 
 ## Insight
-A segurança do WPA2 está diretamente relacionada à complexidade da senha utilizada, e não apenas ao protocolo em si.
+A segurança do WPA2 depende principalmente da complexidade da senha, e não apenas do protocolo em si.
 
 ## Ética
 Este projeto foi realizado exclusivamente em ambiente controlado e autorizado, com fins educacionais.
+
+## Autor
+João Carlos Velho de Oliveira.
