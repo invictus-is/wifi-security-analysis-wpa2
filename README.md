@@ -10,12 +10,14 @@ Este projeto tem como objetivo analisar a segurança de redes Wi-Fi que utilizam
 
 ## Identificação da Rede
 Foi identificada uma rede com as seguintes características:
+  ![Scan](monitoramento-WPA2.png)
 - Protocolo: WPA2
 - Cifra: CCMP
 - Autenticação: PSK
 - Canal: 6
 - Tráfego ativo presente
 - Clientes conectados
+
 
 ## Captura do Handshake
 Durante a análise, foi possível observar pacotes EAPOL, indicando que o handshake WPA2 foi capturado com sucesso.
@@ -34,6 +36,11 @@ Neste cenário, a rede demonstrou vulnerabilidade devido ao uso de uma senha fra
 - Implementar WPA3
 - Desativar WPS
 - Monitorar eventos de desautenticação
+
+ ## 📊 Resultado da Análise
+A captura do handshake permitiu validar a vulnerabilidade da rede a ataques de dicionário.
+
+![Resultado](handshake.png)
 
 ## Ética
 Este projeto foi realizado exclusivamente em ambiente controlado e autorizado, com fins educacionais.
